@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+html, body{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background: radial-gradient(circle, #fff, #bbb);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__todo{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: rgb(48, 42, 42);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.container__todo h1{
+    color: #fff;
+}
+
+.container_inputs{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #fff;
+    padding: 5px;
+}
+
+.container_inputs input{
+    height: 25px;
+}
+
+#agregar{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#agregar:hover{
+    background-color: rgb(13, 155, 56);
+}
+
+.container__todo table{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.container__todo-fila input{
+    height: 30px;
+}
+
+.container__todo-fila select option{
+    height: 30px;
+}

@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+html, body{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background: radial-gradient(circle, #fff, #bbb);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__todo{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    background-color: rgb(48, 42, 42);
+    align-items: center;
+    overflow-y: hidden;
+    border-radius: 12px;
+    margin: 20px;
+    position: relative;
+    border: 4px solid #fff;
+    padding: 15px;
+}
+
+.container__todo-titulo-descarga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#descargar{
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.container__todo h1{
+    color: #fff;
+    font-size: 45px;
+}
+
+.container__todo table{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.container__todo table tr td{
+    color: #000;
+    border: 1px solid #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container__todo table tr{
+    height: 40px;
+}
+
+#agregar{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: all 1s;
+}
+
+#agregar:hover{
+    background-color: rgb(13, 155, 56);
+}
+
+#agregarAbajo{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: all 1s;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#agregarAbajo:hover{
+    background-color: rgb(13, 155, 56);
+}
+
+#eliminar{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: all 1s;
+    text-align: center;
+}
+
+#eliminar:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#eliminarAbajo{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 4px;
+    transition: all 1s;
+    text-align: center;
+}
+
+#eliminarAbajo:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#modificar{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    transition: all 1s;
+}
+
+#modificar:hover{
+    background-color: rgb(231, 228, 16);
+}
+
+.container__todo-sub{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__todo a{
+    color: #fff;
+}
+
+.container-todo-botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__todo-buscador{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    position: relative;
+}
+
+.container__todo-buscador button{
+    height: 60%;
+    width: 35px;
+    background-color: transparent;
+    position: relative;
+    color: #fff;
+}
+
+#buscar_1{
+    height: 60%;
+
+}
+
+#fila__uno{
+    background-color: #000;
+}
+
+#fila__uno td{
+    color: #fff;
+}
+
+.form__body{
+    display: flex;
+    flex-direction: column;
+}
+
+#guardar{
+    height: 40px;
+}
+
+.container__todo--input{
+    width: 100%;
+    height: 100%;
+}
+
+.container__todo-ordenar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__todo-ordenar select{
+    height: 60%;
+}
+
+.formEliminarMarca{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 42, 42);
+    text-align: center;
+}
+
+.container__todo-fila td input{
+    width: 100%;
+    height: 100%;
+}
+
+.marcasSuccess{
+    width: 40vw;
+    height: 80px;
+    background-color: rgb(48, 42, 42);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marcasSuccess h1{
+    color:rgb(13, 155, 56);
+}
+
+.marcasSuccess a{
+    color: #fff;
+}
+
+.marcasNotSuccess{
+    width: 40vw;
+    height: 80px;
+    background-color: rgb(48, 42, 42);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marcasNotSuccess h1{
+    color:rgb(197, 21, 59);
+}
+
+.marcasNotSuccess a{
+    color: #fff;
+}
+
+.container__todo-marcas-categorias{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.container__inputs{
+    color: #fff;
+}
+
+#factura{
+    display: flex;
+    flex-direction: column;
+}
+
+#facturaID{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 5px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#facturaID a {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    align-items: center;
+}
+
